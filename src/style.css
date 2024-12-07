@@ -1,0 +1,62 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+/* Style for each section */
+.section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 8vmin; /* Default font size for sections */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Odd sections are aligned to the right */
+section:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+/* Styles for the greeting */
+.greeting {
+    text-align: center;
+}
+
+.greeting h1 {
+    margin-bottom: 0.5em;
+}
+
+.greeting h2 {
+    font-size: 7vmin;
+    margin-top: 0;
+}
+
+/* New styles for the second section */
+.section:nth-child(2) h2:first-of-type {
+    margin-bottom: 0.5em;
+}
+
+.section:nth-child(2) h2:last-of-type {
+    font-size: 9vmin;
+    margin-top: 0;
+}
+
+/* Specific adjustment for the third section's heading */
+.section:nth-child(3) h2 {
+    font-size: 4vmin;  /* Reduced font size for the "Check Galaxy in Controls" heading */
+    margin-top: 0;
+    text-align: center; /* Ensure the text is centered */
+}
